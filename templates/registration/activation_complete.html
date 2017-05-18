@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+
+{% load staticfiles %}
+
+
+
+{% block content %}
+  {% csrf_token %}
+  <h2>Ваша регистрация успешно завершена!<br />
+  :-) </h2>
+{% endblock content %}

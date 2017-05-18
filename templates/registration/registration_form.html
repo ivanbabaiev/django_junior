@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+
+{% load staticfiles %}
+
+
+{% block content %}
+  <form action="" method="POST">
+  <table>
+{% csrf_token %}
+      <h2>Create your Html Test account</h2>
+
+    <div style="text-align: center">
+
+    {{ form.as_p }}
+    </div>
+  </table>
+  <div style="text-align: center">
+    <p><input style="text-align: center" type="submit" value="Submit"></p>
+  </div>
+  </form>
+{% endblock content %}
